@@ -29,6 +29,7 @@ ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
 CSRF_TRUSTED_ORIGINS = [
     'https://lexar.approwess.xyz/'
 ]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # This is used by Wagtail's email notifications for constructing absolute
