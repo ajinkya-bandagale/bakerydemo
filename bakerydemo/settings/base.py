@@ -174,7 +174,7 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "static"),
 ]
 
-STATIC_ROOT = os.path.join(PROJECT_DIR, "collect_static")
+STATIC_ROOT = os.path.join(PROJECT_DIR, "collectstatic")
 STATIC_URL = "/static/"
 
 MEDIA_ROOT = os.path.join(PROJECT_DIR, "media")
