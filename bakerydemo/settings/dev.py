@@ -8,7 +8,9 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 WAGTAILADMIN_BASE_URL = "http://localhost:8000"
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://lexar.approwess.xyz/'
+]
 try:
     from .local import *  # noqa
 except ImportError:
