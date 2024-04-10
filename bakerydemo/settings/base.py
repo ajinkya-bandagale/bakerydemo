@@ -92,12 +92,14 @@ MIDDLEWARE = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 ROOT_URLCONF = "bakerydemo.urls"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            "bakerydemo/templates",
+            # "bakerydemo/templates",
+            os.path.join(BASE_DIR, 'bakerydemo/templates'),
         ],
         "APP_DIRS": True,
         "OPTIONS": {
